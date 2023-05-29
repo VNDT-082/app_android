@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietSanPham">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="@color/orange">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/orange"
+            android:layout_margin="5dp"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/btnQuayVe"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                android:background="@color/orange"/>
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Nhập tên/mã sản phẩm..."/>
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+                android:background="@color/orange"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/imgSanPham"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/tvTenSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TenSanPham"
+                            android:textSize="26dp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvGia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gia"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvChiTiet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ChiTietSanPham"
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            android:layout_margin="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="10dp"
+                            android:weightSum="4"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text=" "
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="2"
+                                android:text="Chi tiết"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="Giá"
+                                android:textSize="18dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="Size"
+                                android:textSize="18dp"/>
+
+                            <Spinner
+                                android:id="@+id/Spinner_Size"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="2"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvGiaSize"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="0 vnđ"
+                                android:textSize="18dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="Lượng đường"
+                                android:textSize="18dp"/>
+
+                            <Spinner
+                                android:id="@+id/Spinner_LuongDuong"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="2"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="0 vnđ"
+                                android:textSize="18dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="Lượng đá"
+                                android:textSize="18dp"/>
+
+                            <Spinner
+                                android:id="@+id/Spinner_LuongDa"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="2"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="0 vnđ"
+                                android:textSize="18dp"/>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listViewTopping"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:scrollbars="vertical"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Số lượng:"
+                                android:textSize="18dp"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:weightSum="3">
+
+                                <ImageButton
+                                    android:id="@+id/btnSubtract"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/orange"
+                                    android:src="@drawable/baseline_remove_24" />
+
+                                <EditText
+                                    android:id="@+id/edtSoLuong"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:inputType="number"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"/>
+
+                                <ImageButton
+                                    android:id="@+id/btnAdd"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/orange"
+                                    android:src="@drawable/baseline_add_24" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:text=""/>
+                            <Button
+                                android:id="@+id/btnThemGioHang"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:backgroundTint="@color/orange"
+                                android:layout_weight="1"
+                                android:text="Thêm vào giỏ" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nhận xét sản phẩm"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imgKhachHang"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                tools:srcCompat="@tools:sample/avatars" />
+                            <TextView
+                                android:id="@+id/tvTenKhachHang"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textSize="18dp"
+                                android:text="VoNguyenDuyTan" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+
+                            <EditText
+                                android:id="@+id/edtNhanXet"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:text=""
+                                android:gravity="left"
+                                android:hint="Nhận xét của bạn..."
+                                android:background="@drawable/boder"
+                                />
+
+                            <RatingBar
+                                android:id="@+id/ratingbar"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:scaleX="1"
+                                android:layout_gravity="left"
+                                android:scaleY="1"
+                                android:layout_height="120px"
+                                android:numStars="5"
+                                />
+
+                            <Button
+                                android:id="@+id/btnTenNhanXet"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="Nhận xét" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

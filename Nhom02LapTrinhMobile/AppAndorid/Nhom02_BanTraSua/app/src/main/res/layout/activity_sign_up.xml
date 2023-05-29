@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG KÝ"
+                android:gravity="center_horizontal"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ShopeeBinhDuong"
+                android:textSize="8dp"
+                android:textColor="@color/orange"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/edtTenKhachHang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Họ và tên..."
+                android:background="@drawable/boder"/>
+
+            <TextView
+                android:id="@+id/tvHoTenErr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/edtSDTDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Số điện thoại đăng nhập..."
+                android:background="@drawable/boder"/>
+
+            <TextView
+                android:id="@+id/tvSDTerr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
+
+            <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Email..." android:background="@drawable/boder"/>
+
+            <TextView
+                android:id="@+id/tvEmailErr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
+            <Spinner
+                android:id="@+id/SpinnerGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/boder"/>
+            <TextView
+                android:id="@+id/tvGTErr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/boder"
+                android:hint="Ngày sinh..."/>
+
+            <TextView
+                android:id="@+id/tvNgáyinhErr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/edtMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:hint="Nhập mật khẩu..."
+                android:background="@drawable/boder"/>
+
+            <TextView
+                android:id="@+id/tvPassErr"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/red" />
+            <Button
+                android:id="@+id/btnDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Đăng KÝ"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/orange"/>
+            <TextView
+                android:id="@+id/tvDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Đăng nhập"
+                android:textSize="16dp"
+                android:textColor="@color/purple_700"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhom02_LapTrinhDiDong"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
